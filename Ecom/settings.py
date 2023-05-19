@@ -79,12 +79,14 @@ WSGI_APPLICATION = 'Ecom.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_dep',
-        'USER': 'admin',
-        'PASSWORD' : 'Rujul123',
-        'HOST': 'django-project.cx0fsoqdnlcv.ap-south-1.rds.amazonaws.com',
-        'PORT': 3306,
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': 'django_dep',
+        # 'USER': 'admin',
+        # 'PASSWORD' : 'Rujul123',
+        # 'HOST': 'django-project.cx0fsoqdnlcv.ap-south-1.rds.amazonaws.com',
+        # 'PORT': 3306,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR /'db.sqlite',
     }
 }
 
